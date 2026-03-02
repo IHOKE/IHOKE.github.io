@@ -22,6 +22,8 @@
 		<link href="common.css" rel="stylesheet">
 		<link href="index.css" rel="stylesheet">
 
+		<!-- CDN -->
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</head>
 
 	<body>
@@ -29,8 +31,8 @@
 		<p class="debug-mobile">You are viewing the Mobile Version!</p>
 
 		<div class="space-vert check">
-			<div class="under-construction c-rounded">
-				<img src="images/common/under-construction.svg" alt="Under Construction Image" class="construction-image">
+			<div class="under-construction b-normal boilerplate">
+				<img src="images/common/icon-construction.svg" alt="Under Construction Image" class="construction-image">
 				<p class="greeting"><b>Hello!</b><br>This Website is<br>Under Construction!</p>
 			</div>
 
@@ -38,15 +40,16 @@
 			<h1>IHOKE's Personal Website</h1>
 			<h1>A.K.A. Hermina Tealie</h1>
 
-			<h2>Get Source Files for my Illustrations on Gumroad!</h2>
-
-			<h2>Or visit my other Social Media!</h2>
-
-			<h2>Or Check out my Old Website!</h2>
-			<button>Click here to Go to My Old Website!</button>
 			<div>
-				<img src="images/common/warning-icon.svg" alt="Warning Icon">
-				<p><em><b>Large Files</b> ahead!!!</em></p>
+				<h2>Visit my other Social Media!</h2>
+			</div>
+
+			<button class="legacy-site-warning-toggle">Check out My Old Website</button>
+			<div class="legacy-site-warning">
+				<div class="b-normal boilerplate">
+					<img src="images/common/icon-warning.svg" alt="Under Construction Image" class="construction-image">
+					<p class="greeting"><b>WARNING!</b><br>Large file size ahead!</p>
+				</div>
 
 				<img src="images/index/v1-preview.avif" alt="v1 Preview">
 				<p>
@@ -54,11 +57,20 @@
 					and the files sizes are <b>NOT OPTIMIZED</b>!!! <br>
 					Ensure you are NOT using mobile data when accessing this webpage.
 				</p>
-				<button>Okay! I Understand!</button>
+				<button>Okay, I Understand!</button>
 			</div>
+
+			<!-- Toggles warning for the legacy site -->
+			<script>
+				$(".legacy-site-warning-toggle").click(function() {
+					$(".legacy-site-warning").slideToggle(300);
+				});
+			</script>
 
 			<h6>Website Source Codes on Github</h6>
 			<a href="https://github.com/IHOKE/IHOKE.github.io">Github Image</a>
+
+			
 		</div>
 
 	</body>

@@ -41,9 +41,8 @@ body {
 }
 
 /* Helpers */
-
-.c-rounded {
-	border-radius: 12px;
+.b-normal {
+	border: 2px solid var(--col-black);
 }
 
 .check {
