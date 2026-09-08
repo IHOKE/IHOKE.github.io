@@ -4,7 +4,7 @@
 :root {
 	--col-black: #222222;
 	--col-white: #F2EDE9;
-	--col-red: #DC0C24;
+	--col-bold: #09A29C;
 }
 
 * {
@@ -12,13 +12,21 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
+	font-weight: 500;
 }
 
 body {
 	height: calc(100vh);
+	background-color: var(--col-white);
+	color: var(--col-black);
+}
+
+.f-spc-g {
+	font-family: "Space Grotesk", sans-serif;
 }
 
 .debug-desktop, .debug-mobile {
+	position: sticky;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -30,22 +38,27 @@ body {
 
 .debug-desktop {
 	color: var(--col-white);
-	background-color: var(--col-red);
+	background-color: var(--col-bold);
 	border: 2px solid var(--col-black);
 }
 
 .debug-mobile {
 	color: var(--col-white);
 	background-color: var(--col-black);
-	border: 2px solid var(--col-red);
+	border: 2px solid var(--col-bold);
 }
 
 /* Helpers */
-
-.c-rounded {
+.rnd {
 	border-radius: 12px;
 }
 
-.check {
-	border: 2px solid var(--col-red);
+.bdr {
+	border: 2px solid var(--col-bold);
+}
+
+.space-v {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
 }
