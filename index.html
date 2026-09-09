@@ -66,35 +66,63 @@
 
 		<div class="c-main">
 			<div class="c-carousel">
-				<div class="wrap">
-					<div id="imgContainer">
+				<div class="c-carousel-track">
+					<div class="c-slide-main">
+						<div class="c-slide-img"><img class="c-slide-img" src="images/artworks/1-evernight+lumine.webp" loading="lazy"></div>
+						<div class="c-slide-shadow"></div>
+						<p class="c-slide-title f-spc-g">Title 1</p>
+						<p class="c-slide-desc f-spc-g">Description 1</p>
+					</div>
 
-					<div class="motiv motiv01"> <h1>ONE</h1> </div>
-					<div class="motiv motiv02"> <h1>TWO</h1> </div>
-					<div class="motiv motiv03"> <h1>THREE</h1> </div> 
+					<div class="c-slide-main">
+						<div class="c-slide-img"><img class="c-slide-img" src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
+						<div class="c-slide-shadow"></div>
+						<p class="c-slide-title f-spc-g">Rifle Modulus</p>
+						<p class="c-slide-desc f-spc-g">Description 2</p>
+					</div>
 
+					<div class="c-slide-main">
+						<div class="c-slide-img"><img class="c-slide-img" src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
+						<div class="c-slide-shadow"></div>
+						<p class="c-slide-title f-spc-g">Title 3</p>
+						<p class="c-slide-desc f-spc-g">Description 3</p>
 					</div>
 				</div>
+
+				<div class="c-carousel-controls" aria-label="Carousel controls">
+					<button class="c-carousel-button" type="button" data-carousel-prev aria-label="Previous slide"><svg><polygon points="50,0 0,86.5 100,86.5"/></svg></button>
+					<button class="c-carousel-button" type="button" data-carousel-next aria-label="Next slide"><svg><polygon points="50,0 0,86.5 100,86.5"/></svg></button>
+				</div>
+				<script src="scripts/loop-carousel.js"></script>
 			</div>
 
 			<div class="c-menu-1">
-				<p class="f-spc-g">Hello!</p>
+				<p class="f-spc-g greet">Hello!</p>
 				<div class="p-mix-1"><p>Welcome to my personal website! I am </p><h1>Hermina Tealie (IHOKE),</h1><p> a passionate graphic designer.</p></div>
 				<p>Explore my services, portfolio,<br>and feel free to reach out for collaborations or commissions!</p>
 				<p class="f-spc-g">Here's a few things I do!</p>
 				<ul class="list-1">
-					<li class="list-1-item">Graphic Design</li>
-					<li class="list-1-item">Web Design</li>
-					<li class="list-1-item">UI/UX Design</li>
-					<li class="list-1-item">Illustration</li>
-					<li class="list-1-item">Illustration</li>
-					<li class="list-1-item">Illustration</li>
+					<li class="list-1-item f-spc-g"><h2>Graphic Design</h2></li>
+					<li class="list-1-item f-spc-g"><h2>Web Design</h2></li>
+					<li class="list-1-item f-spc-g"><h2>UI/UX Design</h2></li>
+					<li class="list-1-item f-spc-g"><h2>Illustration</h2></li>
+					<li class="list-1-item f-spc-g"><h2>Illustration</h2></li>
+					<li class="list-1-item f-spc-g"><h2>Illustration</h2></li>
 				</ul>
 				<script>loopHorizontal(".list-1-item",".list-1", 0.3);</script>
 
-				<div>I am still working on this website rn, for now it will be mainly for my academic work!</div>
+				<ul class="list-2">
+					<li class="list-1-item f-spc-g active">Academic Works</li>
+					<li class="list-1-item f-spc-g">Item 1</li>
+					<li class="list-1-item f-spc-g">Item 2</li>
+					<li class="list-1-item f-spc-g">Item 3</li>
+					<li class="list-1-item f-spc-g">Item 4</li>
+					<li class="list-1-item f-spc-g">Item 5</li>
+					<li class="list-1-item f-spc-g">Item 6</li>
+				</ul>
+
+				<div class="wip"><p>I am still working on this website rn, for now it will be mainly for my academic work!</p></div>
 			</div>
 		</div>
-
 	</body>
 </html>

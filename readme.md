@@ -5,6 +5,17 @@
 
 <tr>
 	<td>9 Sept 2026</td>
+	<td>3</td>
+	<td>
+		Designed carousel, also added button<br>
+		Designed menu 1 > list 2<br>
+		Fixed lots of css spacing and stuff<br>
+		converted some rem units into vmin
+	</td>
+</tr>
+
+<tr>
+	<td>9 Sept 2026</td>
 	<td>2</td>
 	<td>
 		Hid some overflows, and fixed some spacings
