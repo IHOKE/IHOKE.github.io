@@ -22,45 +22,45 @@
 		<link href="common.css" rel="stylesheet">
 		<link href="index.css" rel="stylesheet">
 
-		<!-- CDN -->
-		 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	</head>
 
 	<body>
+		<!-- JS CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+
+		<script src="scripts/loop-horizontal.js"></script>
+
 		<!-- <p class="debug-desktop">You are viewing the Desktop Version!</p>
 		<p class="debug-mobile">You are viewing the Mobile Version!</p> -->
 
-		<navbar class="hide-desktop">
-			<div>
-				<img src="images/common/combined.svg">
+		<navbar>
+			<div class="hide-desktop">
+				<div>
+					<img src="images/common/v2.svg">
+				</div>
+
+				<div>
+					<ul>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+
+						<li><a href="#cta">Start a Commission!</a></li>
+					</ul>
+				</div>
 			</div>
 
-			<div class="rnd">
-				<ul class="rnd">
-					<li><a href="#home">SPACE GROTESK</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+			<div class="hide-mobile">
+				<div>
+					<img src="images/common/v2.svg">
+				</div>
 
-					<li><a href="#cta">Start a Commission!</a></li>
-				</ul>
-			</div>
-		</navbar>
-
-		<navbar class="hide-mobile">
-			<div>
-				<img src="images/common/combined.svg">
-			</div>
-
-			<div>
-				<ul>
-					<li><a href="#home">SPACE GROTESK</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-
-					<li><a href="#cta">Start a Commission!</a></li>
-				</ul>
+				<div>
+					<p>-<br>-<br>-</p>
+				</div>
 			</div>
 		</navbar>
 
@@ -68,14 +68,22 @@
 			<div class="c-carousel bdr">
 			</div>
 
-			<!-- Toggles warning for the legacy site -->
-			<script>
-				$(".legacy-site-warning-toggle").click(function() {
-					$(".legacy-site-warning").slideToggle(300);
-				});
-			</script>
+			<div class="c-menu-1">
+				<p class="f-spc-g">Hello!</p>
+				<div class="p-mix-1"><p>Welcome to my personal website! I am </p><h1>Hermina Tealie,</h1><p> a passionate graphic designer.</p></div>
+				<p>Explore my services, portfolio,<br>and feel free to reach out for collaborations or commissions!</p>
+				<p class="f-spc-g">Here's a few things I do!</p>
+				<ul class="list-1">
+					<li class="list-1-item">Graphic Design</li>
+					<li class="list-1-item">Web Design</li>
+					<li class="list-1-item">UI/UX Design</li>
+					<li class="list-1-item">Illustration</li>
+					<li class="list-1-item">Illustration</li>
+					<li class="list-1-item">Illustration</li>
+				</ul>
 
-			<div class="c-menu-1 bdr">
+				<script>loopHorizontal(".list-1-item",".list-1", 0.3);</script>
+				<div>I am still working on this website rn, for now it will be mainly for my academic work!</div>
 			</div>
 		</div>
 

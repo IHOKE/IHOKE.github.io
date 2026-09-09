@@ -5,6 +5,7 @@
 	--col-black: #222222;
 	--col-white: #F2EDE9;
 	--col-bold: #09A29C;
+	--col-dots: #3d3d3d;
 }
 
 * {
@@ -17,8 +18,7 @@
 
 body {
 	height: calc(100vh);
-	background-color: var(--col-white);
-	color: var(--col-black);
+	background-color: var(--col-bold);
 }
 
 .f-spc-g {
@@ -54,11 +54,9 @@ body {
 }
 
 .bdr {
-	border: 2px solid var(--col-bold);
+	border: 2px solid;
 }
 
-.space-v {
-	display: flex;
-	flex-direction: column;
-	gap: 100px;
+.ease-bounce {
+	transition: all 1.0s cubic-bezier(0.25, 0.10, 0.59, 1.37);
 }
