@@ -116,6 +116,7 @@ navbar {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	overflow: hidden;
 
 	div {height: 100%;}
 }
@@ -203,11 +204,14 @@ navbar {
 			background-color: transparent;
 			color: var(--col-white);
 			font-size: 1.25rem;
+			line-height: 1.8rem;
 		}
 	}
 
 	p:nth-child(4) {
 		margin-top: 20px;
+		font-size: 2rem;
+		font-weight: 700;
 	}
 
 	.list-1 {

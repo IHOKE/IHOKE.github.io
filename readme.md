@@ -4,7 +4,15 @@
 <tr> <th>Date</th> <th>Push No</th> <th>Decription</th></tr>
 
 <tr>
-	<td>9 September 2026</td>
+	<td>9 Sept 2026</td>
+	<td>2</td>
+	<td>
+		Hid some overflows, and fixed some spacings
+	</td>
+</tr>
+
+<tr>
+	<td>9 Sept 2026</td>
 	<td>1</td>
 	<td>
 		Designed right menu panel<br>
@@ -15,7 +23,7 @@
 </tr>
 
 <tr>
-	<td>8 September 2026</td>
+	<td>8 Sept 2026</td>
 	<td>2</td>
 	<td>
 		Redesigned navbar logo to be slimmer
@@ -23,7 +31,7 @@
 </tr>
 
 <tr>
-	<td>8 September 2026</td>
+	<td>8 Sept 2026</td>
 	<td>1</td>
 	<td>
 		Overhauled the overall design<br>
