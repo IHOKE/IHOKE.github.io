@@ -1,4 +1,20 @@
-/* Proudly stolen from GSAP forums */
+function renderFromUrl() {
+    const parts = window.location.pathname
+        .split("/")
+        .filter(Boolean);
+
+    const [category, article] = parts;
+
+    openMenu1();
+
+    if (category) {
+        openMenu2(category);
+    }
+
+    if (article) {
+        openArticle(article);
+    }
+}/* Proudly stolen from GSAP forums */
 
 function loopHorizontal(argChild, argParent, argSpeed) {
 let rowsH = gsap.utils.toArray(argParent);

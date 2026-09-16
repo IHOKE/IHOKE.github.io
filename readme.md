@@ -4,13 +4,32 @@
 <tr> <th>Date</th> <th>Push No</th> <th>Decription</th></tr>
 
 <tr>
+	<td>16 Sept 2026</td>
+	<td>1</td>
+	<td>
+		<ul>
+			<li>Fixed .list-1 clipping when viewport height is too small</li>
+			<li>Fixed mobile RWD</li>
+			<li>Fixed carousel breaking on mobile RWD</li>
+			<li>Fixed min font sizes for RWD</li>
+			<li>Testing popup menus, WIP</li>
+			<li>Designed 2 popup menus, is now functional, WIP</li>
+			<li>Will probably make a JS to import carousel slides, so as to not hardcode them, and maybe menus in the future too</li>
+			<li>Fixed menu on mobile navbar, no functionality yet</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>9 Sept 2026</td>
 	<td>3</td>
 	<td>
-		Designed carousel, also added button<br>
-		Designed menu 1 > list 2<br>
-		Fixed lots of css spacing and stuff<br>
-		converted some rem units into vmin
+		<ul>
+			<li>Designed carousel, also added button</li>
+			<li>Designed menu 1 > list 2</li>
+			<li>Fixed lots of css spacing and stuff</li>
+			<li>Converted some rem units into vmin</li>
+		</ul>
 	</td>
 </tr>
 
@@ -18,7 +37,9 @@
 	<td>9 Sept 2026</td>
 	<td>2</td>
 	<td>
-		Hid some overflows, and fixed some spacings
+		<ul>
+			<li>Hid some overflows, and fixed some spacings</li>
+		</ul>
 	</td>
 </tr>
 
@@ -26,10 +47,12 @@
 	<td>9 Sept 2026</td>
 	<td>1</td>
 	<td>
-		Designed right menu panel<br>
-		Implemented GSAP, added draggable animation for list<br>
-		Also added animation to various elements<br>
-		Tweaked animations to use bounce easing
+		<ul>
+			<li>Designed right menu panel</li>
+			<li>Implemented GSAP, added draggable animation for list</li>
+			<li>Also added animation to various elements</li>
+			<li>Tweaked animations to use bounce easing</li>
+		</ul>
 	</td>
 </tr>
 
@@ -37,7 +60,9 @@
 	<td>8 Sept 2026</td>
 	<td>2</td>
 	<td>
-		Redesigned navbar logo to be slimmer
+		<ul>
+			<li>Redesigned navbar logo to be slimmer</li>
+		</ul>
 	</td>
 </tr>
 
@@ -45,9 +70,11 @@
 	<td>8 Sept 2026</td>
 	<td>1</td>
 	<td>
-		Overhauled the overall design<br>
-		Created navbar<br>
-		Fixed and merged broken branches
+		<ul>
+			<li>Overhauled the overall design</li>
+			<li>Created navbar</li>
+			<li>Fixed and merged broken branches</li>
+		</ul>
 	</td>
 </tr>
 

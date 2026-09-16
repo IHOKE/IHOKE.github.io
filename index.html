@@ -22,6 +22,7 @@
 		<link href="common.css" rel="stylesheet">
 		<link href="index.css" rel="stylesheet">
 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 	<body>
@@ -59,7 +60,7 @@
 				</div>
 
 				<div>
-					<p>-<br>-<br>-</p>
+					<p>---<br>---<br>---</p>
 				</div>
 			</div>
 		</navbar>
@@ -68,21 +69,21 @@
 			<div class="c-carousel">
 				<div class="c-carousel-track">
 					<div class="c-slide-main">
-						<div class="c-slide-img"><img class="c-slide-img" src="images/artworks/1-evernight+lumine.webp" loading="lazy"></div>
+						<div class="c-slide-img"><img src="images/artworks/1-evernight+lumine.webp" loading="lazy"></div>
 						<div class="c-slide-shadow"></div>
 						<p class="c-slide-title f-spc-g">Title 1</p>
 						<p class="c-slide-desc f-spc-g">Description 1</p>
 					</div>
 
 					<div class="c-slide-main">
-						<div class="c-slide-img"><img class="c-slide-img" src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
+						<div class="c-slide-img"><img src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
 						<div class="c-slide-shadow"></div>
 						<p class="c-slide-title f-spc-g">Rifle Modulus</p>
 						<p class="c-slide-desc f-spc-g">Description 2</p>
 					</div>
 
 					<div class="c-slide-main">
-						<div class="c-slide-img"><img class="c-slide-img" src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
+						<div class="c-slide-img"><img src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
 						<div class="c-slide-shadow"></div>
 						<p class="c-slide-title f-spc-g">Title 3</p>
 						<p class="c-slide-desc f-spc-g">Description 3</p>
@@ -112,17 +113,71 @@
 				<script>loopHorizontal(".list-1-item",".list-1", 0.3);</script>
 
 				<ul class="list-2">
-					<li class="list-1-item f-spc-g active">Academic Works</li>
-					<li class="list-1-item f-spc-g">Item 1</li>
-					<li class="list-1-item f-spc-g">Item 2</li>
-					<li class="list-1-item f-spc-g">Item 3</li>
-					<li class="list-1-item f-spc-g">Item 4</li>
-					<li class="list-1-item f-spc-g">Item 5</li>
-					<li class="list-1-item f-spc-g">Item 6</li>
+					<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-academic-works')">Academic Works</button></li>
+					<li><button class="f-spc-g">Coming soon!</button></li>
 				</ul>
 
 				<div class="wip"><p>I am still working on this website rn, for now it will be mainly for my academic work!</p></div>
+
+				<script>
+					function togglePopup(argClass) {
+						const in_class = document.querySelector(`.${argClass}`);
+						in_class.classList.toggle('active');
+					}
+				</script>
 			</div>
 		</div>
+
+		<div class="pop-t pop-academic-works active">
+			<h6 class="f-spc-g">Academic Works</h6>
+			<ul class="list-2">
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-206')">BCM 206 Future Networks</button></li>
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-212')">BCM 212 Understanding Research Practice</button></li>
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-222')">BCM 222 Global Media and Social Justice</button></li>
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-241')">BCM 241 Media Ethnographies</button></li>
+				<li class="active list-2-close"><button class="f-spc-g" onclick="togglePopup('pop-academic-works')">Close</button></li>
+			</ul>
+		</div>
+
+		<div class="pop-t pop-bcm-206 pop-bcm-c active">
+			<h6 class="f-spc-g">BCM 206 Future Networks</h6>
+			<ul class="list-2">
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-206-a1')">Assignment 1</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-206-a2')">Assignment 2</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-206-a3')">Assignment 3</button></li>
+				<li class="active list-2-close"><button class="f-spc-g" onclick="togglePopup('pop-bcm-206')">Close</button></li>
+			</ul>
+		</div>
+
+		<div class="pop-t pop-bcm-212 pop-bcm-c">
+			<h6 class="f-spc-g">BCM 212 Understanding Research Practice</h6>
+			<ul class="list-2">
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-212-a1')">Assignment 1</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-212-a2')">Assignment 2</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-212-a3')">Assignment 3</button></li>
+				<li class="active list-2-close"><button class="f-spc-g" onclick="togglePopup('pop-bcm-212')">Close</button></li>
+			</ul>
+		</div>
+
+		<div class="pop-t pop-bcm-222 pop-bcm-c">
+			<h6 class="f-spc-g">BCM 222 Global Media and Social Justices</h6>
+			<ul class="list-2">
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-222-a1')">Assignment 1</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-222-a2')">Assignment 2</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-222-a3')">Assignment 3</button></li>
+				<li class="active list-2-close"><button class="f-spc-g" onclick="togglePopup('pop-bcm-222')">Close</button></li>
+			</ul>
+		</div>
+
+		<div class="pop-t pop-bcm-241 pop-bcm-c">
+			<h6 class="f-spc-g">BCM 241 Media Ethnographies</h6>
+			<ul class="list-2">
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-241-a1')">Assignment 1</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-241-a2')">Assignment 2</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-241-a3')">Assignment 3</button></li>
+				<li class="active list-2-close"><button class="f-spc-g" onclick="togglePopup('pop-bcm-241')">Close</button></li>
+			</ul>
+		</div>
+
 	</body>
 </html>

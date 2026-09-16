@@ -50,14 +50,32 @@ navbar {
 
 
 			div:first-child {
-				width: 100%;
-				img {margin: 0 auto;}
+				display: flex;
+				flex-grow: 1;
+				padding-left: max(8%, 25px);
 			}
 
 			div:last-child {
 				height: 60px;
 				width: 60px;
 				background-color: var(--col-white);
+				display: flex;
+				p {
+					height: 100%;
+					width: 100px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					line-height: 5px;
+					letter-spacing: -3.2px;
+					cursor: pointer;
+				}
+
+				p:hover{
+					background-color:var(--col-bold);
+					color: var(--col-white);
+					transition: all 0.15s;
+				}
 			}
 		}
 	}
@@ -118,12 +136,12 @@ navbar {
 	justify-content: space-between;
 	overflow: hidden;
 
-	div {height: 100%;}
 }
 
 .c-carousel {
 	z-index: 0;
 	width: 65%;
+	height: 100%;
 	position: relative;
 	overflow: hidden;
 }
@@ -146,9 +164,10 @@ navbar {
 		width: 100%;
 
 		img {
+			height: 100%;
+			width: 100%;
 			object-fit: cover;
-			object-position: left;
-			
+			object-position: left;			
 		}
 	}
 
@@ -168,6 +187,7 @@ navbar {
 		z-index: 400;
 		color: white;
 		mix-blend-mode: difference;
+		white-space: nowrap;
 	}
 
 	.c-slide-title {
@@ -181,15 +201,58 @@ navbar {
 		position: absolute;
 		left: 5rem; bottom: 4.75rem;
 	}
+
+	@media (max-width: 768px) {
+		.c-carousel {
+			height: 25vh;
+			min-height: 250px;
+		}
+
+		.c-carousel-track {
+			height: 100%;
+		}
+
+		.c-slide-img {
+			height: 100%;
+			min-height: 250px;
+			width: 100vw;
+			object-fit: contain;
+		}
+
+		.c-slide-title, .c-slide-desc {
+			left: 2rem;
+		}
+
+		.c-slide-title {
+			font-size: 3rem;
+			bottom: 2.5rem;
+		}
+
+		.c-slide-desc {
+			font-size: 1.1rem;
+			bottom: 1.9rem;
+		}
+	}
 }
 
 .c-carousel-controls {
 	position: absolute;
 	z-index: 600;
 	left: 4rem;
-	bottom: -2rem;
+	top: 2.5rem;
 	display: flex;
 	gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+	.c-carousel-controls {
+		left: auto;
+		right: 3rem;
+		top: auto;
+		bottom: 2rem;
+		opacity: 75%;
+		mix-blend-mode: difference;
+	}
 }
 
 .c-carousel-button {
@@ -224,6 +287,10 @@ navbar {
 	box-shadow: none;
 	transition: box-shadow 0.2s cubic-bezier(0.27, 1.10, 0.76, 1.15);
 	transition: transform 0.2s cubic-bezier(0.27, 1.10, 0.76, 1.15);
+
+	@media (max-width: 768px) {
+		background-color: #A2090F;
+	}
 }
 
 @keyframes anim-greet {
@@ -254,14 +321,14 @@ navbar {
 		background-color: var(--col-bold);
 		color: var(--col-white);
 
-		font-size: 6vmin;
+		font-size: max(6vmin, 45px);
 		font-weight: 800;
 		padding: 10px 80px;
 		margin: 40px 0 30px 0;
 		transform: rotate(-3deg) scale(1.0); 
 
 		animation-name: anim-greet;
-  		animation-duration: 0.7s;
+		animation-duration: 0.7s;
 		animation-iteration-count: infinite;
 		animation-direction: alternate;
 
@@ -278,7 +345,7 @@ navbar {
 			font-weight: 600;
 			background-color: transparent;
 			display:inline;
-			font-size: 1.875vmin;
+			font-size: max(1.875vmin, 14px);
 		}
 
 		h1 {
@@ -320,9 +387,12 @@ navbar {
 		width: 120%;
 		overflow: hidden;
 		display: flex;
+		align-items: center;
 		flex-direction: row;
-		margin: 1.3vmin 0;
-		height: 8vmin;
+		margin: max(1.3vmin, 30px) 0;
+		height: 10vh;
+		min-height: 40px;
+		max-height: 60px;
 
 		list-style-type: none;
 	}
@@ -330,55 +400,65 @@ navbar {
 	.list-1 li h2{
 		height: 2vmin;
 		margin-left: 50px;
-		font-size: 1.5vmin;
+		font-size: max(1.5vmin, 14px);
 
 		background-color: var(--col-black);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		white-space: nowrap;
-		padding: 2vmin;
+		padding: max(2vmin, 14px);
 		border: var(--col-white) 2px solid;
 	}
+}
 
-	.list-2 {
-		flex-grow: 1;
-		width: 100%;
-		padding: 2.5vmin;
-		gap: 2.5vmin;
-		overflow: scroll;
+.list-2 {
+	flex-grow: 1;
+	width: 100%;
+	padding: max(2.5vmin, 30px) 0;
+	gap: max(2.5vmin, 30px);
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+	background: var(--col-white);
+
+	li {
+		font-size: max(1.55vmin, 20px);
+		width: 80%;
+		background-color: var(--col-black);
+		color: var(--col-white);
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		list-style-type: none;
-		background: var(--col-white);
+	}
 
-		li {
-			font-size: 1.55vmin;
-			padding: 1.55vmin;
-			width: 80%;
-			height: 50px;
-			background-color: var(--col-black);
-			color: var(--col-white);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
+	.active {
+		background-color: var(--col-bold);
+		color: var(--col-white);
+		transition: transform 0.2s cubic-bezier(0.27, 1.10, 0.76, 1.35);
+		cursor: pointer;
+	}
 
-		.active {
-			background-color: var(--col-bold);
-			color: var(--col-white);
-			transition: transform 0.2s cubic-bezier(0.27, 1.10, 0.76, 1.35);
-		}
+	.active:hover{
+		transform: scale(1.1);
+		transition: transform 0.2s cubic-bezier(0.27, 1.10, 0.76, 1.35);
+		cursor: pointer;
+	}
 
-		.active:hover{
-			transform: scale(1.1);
-			transition: transform 0.2s cubic-bezier(0.27, 1.10, 0.76, 1.35);
-		}
+	button {
+		padding: 1.55vmin;
+		width: 100%;
+		border: none;
+		background-color: transparent;
+		color: var(--col-white);
+		font-size: max(1.55vmin, 20px);
 	}
 }
 
 .wip {
+	width: 100%;
 	max-height: 8vmin;
 	z-index: 1000;
 	display: flex;
@@ -387,9 +467,58 @@ navbar {
 
 	p {
 		font-size: max(1.4vmin, 12px);
-		background-color: var(--col-bold);
-		color: var(--col-black);
 		padding: 1.2vmin 1.5vw;
+	}
+}
+
+.pop-t {
+	opacity: 0%;
+	pointer-events: none;
+	width: 20vw;
+	min-width: 350px;
+	bottom: -100px;
+	background-color: white;
+	box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+	left: 44vw;
+	position: fixed;
+	z-index: 1000;
+	li {list-style-type: none;}
+	transition: all 0.2s cubic-bezier(0.27, 1.10, 0.6, 1.25);
+
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+
+	h6 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.list-2 li {
+		height: auto;
+	}
+}
+
+.pop-t.active {
+	bottom: 100px;
+	opacity: 100%;
+	pointer-events: auto;
+}
+
+.pop-bcm-c {
+	z-index: 1001;
+	left: calc(44vw - 150px);
+}
+
+.list-2 li.active button{cursor: pointer;}
+
+.list-2-close{
+	width: auto !important;
+	
+	button {
+		width: auto;
+		background-color: #A2090F;
+		cursor: pointer;
 	}
 }
 
@@ -408,4 +537,15 @@ navbar {
 
 	.hide-desktop { display: none; }
 	.hide-mobile { display: flex; }
+
+	.c-main {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.c-carousel,
+	.c-menu-1 {
+		width: 100%;
+		min-width: 0;
+	}
 }
