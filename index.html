@@ -69,21 +69,35 @@
 			<div class="c-carousel">
 				<div class="c-carousel-track">
 					<div class="c-slide-main">
-						<div class="c-slide-img"><img src="images/artworks/1-evernight+lumine.webp" loading="lazy"></div>
+						<div class="c-slide-img"><img src="images/carousel/1-evernight+lumine.webp" loading="lazy"></div>
 						<div class="c-slide-shadow"></div>
-						<p class="c-slide-title f-spc-g">Title 1</p>
-						<p class="c-slide-desc f-spc-g">Description 1</p>
+						<p class="c-slide-title f-spc-g">Digital Illustrations</p>
+						<p class="c-slide-desc f-spc-g">Painted in Clip Studio Paint</p>
 					</div>
 
 					<div class="c-slide-main">
-						<div class="c-slide-img"><img src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
+						<div class="c-slide-img"><img src="images/carousel/2-rifle-modulus.webp" loading="lazy"></div>
 						<div class="c-slide-shadow"></div>
 						<p class="c-slide-title f-spc-g">Rifle Modulus</p>
-						<p class="c-slide-desc f-spc-g">Description 2</p>
+						<p class="c-slide-desc f-spc-g">A futuristic bulpup rifle concept - Blender</p>
 					</div>
 
 					<div class="c-slide-main">
-						<div class="c-slide-img"><img src="images/artworks/2-rifle-modulus.webp" loading="lazy"></div>
+						<div class="c-slide-img"><img src="images/carousel/3-non-keychains.webp" loading="lazy"></div>
+						<div class="c-slide-shadow"></div>
+						<p class="c-slide-title f-spc-g">Keychain Designs</p>
+						<p class="c-slide-desc f-spc-g">NON Series - Clip Studio Paint</p>
+					</div>
+
+					<div class="c-slide-main">
+						<div class="c-slide-img"><img src="images/carousel/4-leap2kids.webp" loading="lazy"></div>
+						<div class="c-slide-shadow"></div>
+						<p class="c-slide-title f-spc-g">Architecture Visualization</p>
+						<p class="c-slide-desc f-spc-g">Leap Leap Kids Lutherian Center - Blender</p>
+					</div>
+
+					<div class="c-slide-main">
+						<div class="c-slide-img"><img src="images/carousel/2-rifle-modulus.webp" loading="lazy"></div>
 						<div class="c-slide-shadow"></div>
 						<p class="c-slide-title f-spc-g">Title 3</p>
 						<p class="c-slide-desc f-spc-g">Description 3</p>
@@ -99,7 +113,7 @@
 
 			<div class="c-menu-1">
 				<p class="f-spc-g greet">Hello!</p>
-				<div class="p-mix-1"><p>Welcome to my personal website! I am </p><h1>Hermina Tealie (IHOKE),</h1><p> a passionate graphic designer.</p></div>
+				<div class="p-mix-1"><p>Welcome to my personal website! I am </p><h1>Hermina Tealie (IHOKE),</h1><p>a passionate graphic designer.</p></div>
 				<p>Explore my services, portfolio,<br>and feel free to reach out for collaborations or commissions!</p>
 				<p class="f-spc-g">Here's a few things I do!</p>
 				<ul class="list-1">
@@ -128,7 +142,8 @@
 			</div>
 		</div>
 
-		<div class="pop-t pop-academic-works active">
+		<!-- First layer popup menus -->
+		<div class="pop-t pop-academic-works">
 			<h6 class="f-spc-g">Academic Works</h6>
 			<ul class="list-2">
 				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-206')">BCM 206 Future Networks</button></li>
@@ -139,7 +154,8 @@
 			</ul>
 		</div>
 
-		<div class="pop-t pop-bcm-206 pop-bcm-c active">
+		<!-- Second layer popup menus -->
+		<div class="pop-t pop-bcm-206 pop-bcm-c">
 			<h6 class="f-spc-g">BCM 206 Future Networks</h6>
 			<ul class="list-2">
 				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-206-a1')">Assignment 1</button></li>
@@ -179,5 +195,18 @@
 			</ul>
 		</div>
 
+		<!-- Last layer popup articles -->
+
+		<div class="pop-t pop-bcm-241 pop-bcm-c">
+			<h6 class="f-spc-g">BCM 241 Media Ethnographies</h6>
+			<ul class="list-2">
+				<li class="active"><button class="f-spc-g" onclick="togglePopup('pop-bcm-241-a1')">Assignment 1</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-241-a2')">Assignment 2</button></li>
+				<li class=""><button class="f-spc-g" onclick="togglePopup('pop-bcm-241-a3')">Assignment 3</button></li>
+				<li class="active list-2-close"><button class="f-spc-g" onclick="togglePopup('pop-bcm-241')">Close</button></li>
+			</ul>
+		</div>
+
+		<!-- ^^^ Put popups above ^^^ -->
 	</body>
 </html>
