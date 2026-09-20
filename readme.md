@@ -4,11 +4,15 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
-	<td>17 Sept 2026</td>
+	<td>21 Sept 2026</td>
 	<td>
 		<ul>
-			<li>Added a few more images to carousel</li>
+			<li>Added a few more slides to carousel</li>
 			<li>Glued Navbar back onto top</li>
+			<li>Added BCM206 Assignment 1</li>
+			<li>Vibed URL rerouting &#40;idk JS bruh&#41;</li>
+			<li>Fixed .pop-t positioning on mobile RWD</li>
+			<li>Looking to code a script to non-hardcode assignments and carousel slides</li>
 		</ul>
 	</td>
 </tr>
