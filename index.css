@@ -683,13 +683,18 @@ navbar {
 
 	.pop-bcm-a {
 		width: 95vw;
+		height: 70vh;
 		li:first-child p {
 			text-align: left ;
 		}
 
 		.header-1 {
-			border: 2px red solid;
 			text-align: center;
 		}
+
+		.horizontal-showcase, .horizontal-showcase-desc {
+			flex-direction: column;
+		}
 	}
+	
 }

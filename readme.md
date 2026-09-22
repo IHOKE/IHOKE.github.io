@@ -4,6 +4,17 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>22 Sept 2026</td>
+	<td>
+		<ul>
+			<li>Set flex direction to column in RWD</li>
+			<li>Fixed border in .pop-bcm-a headers in RWD</li>
+			<li>Fixed height of .pop-bcm-a</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>21 Sept 2026</td>
 	<td>
 		<ul>
