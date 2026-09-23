@@ -4,6 +4,17 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>23 Sept 2026</td>
+	<td>
+		<ul>
+			<li>Added bcm-241-a1 slides</li>
+			<li>Fixed close button position</li>
+			<li>Future me plz remember to replace the luth center pic</li>
+		</ul>
+	</td>
+</tr>	
+
+<tr>
 	<td>22 Sept 2026</td>
 	<td>
 		<ul>
