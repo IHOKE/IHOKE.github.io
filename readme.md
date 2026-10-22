@@ -4,6 +4,16 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>22 Oct 2026</td>
+	<td>
+		<ul>
+			<li>Added pop-bcm-212-a2a</li>
+			<li>Added some styling classes for .citation-list</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>21 Oct 2026</td>
 	<td>
 		<ul>
