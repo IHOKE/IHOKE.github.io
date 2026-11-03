@@ -45,6 +45,8 @@
 		});
 	}
 
-	window.addEventListener('DOMContentLoaded', applyPopupRoute);
 	window.addEventListener('hashchange', applyPopupRoute);
+	window.htmlIncludesReady.then(applyPopupRoute).catch(error => {
+		console.error('Could not initialize popup routes.', error);
+	});
 })();

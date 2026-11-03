@@ -604,6 +604,14 @@ navbar {
 		}
 	}
 
+	.header-3{
+		padding: 0.5vh 3vw;
+		font-size: max(3vmin, 24px);
+		font-weight: 700;
+		border: solid 2px var(--col-black);
+		margin-bottom: 1rem;
+	}
+
 	.horizontal-showcase, .horizontal-showcase-desc {
 		height: 50vh;
 		flex: 0 0 50vh;
@@ -678,6 +686,7 @@ navbar {
 
 	.citation-list {
 		li {
+			display: block;
 			align-items: flex-start;
 			justify-content: flex-start;
 			overflow: visible;
@@ -686,6 +695,13 @@ navbar {
 			text-justify: inter-word;
 			background-color: transparent;
 			color: var(--col-black);
+			flex-direction: column;
+
+			img {
+				width: 100%;
+				object-fit: scale-down;
+			}
+
 		}
 
 		.bold {
@@ -699,6 +715,11 @@ navbar {
 
 		.indent{
 			padding-left: 5vw;
+		}
+
+		.justify {
+			text-align: justify;
+			text-justify: inter-word;
 		}
 	}
 

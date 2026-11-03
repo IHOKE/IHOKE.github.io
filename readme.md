@@ -4,6 +4,17 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>3 Nov 2026</td>
+	<td>
+		<ul>
+			<li>Separated .pops into their own <code>html</code> directory</li>
+			<li>Added a JS to ammend them back into index html</li>
+			<li>Added .pop-bcm-241-a2b</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>22 Oct 2026</td>
 	<td>
 		<ul>
