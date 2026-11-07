@@ -4,6 +4,15 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>7 Nov 2026</td>
+	<td>
+		<ul>
+			<li>Added .pop-bcm-206-a2</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>3 Nov 2026</td>
 	<td>
 		<ul>
