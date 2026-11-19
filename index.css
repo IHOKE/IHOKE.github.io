@@ -684,7 +684,7 @@ navbar {
 		}
 	}
 
-	.citation-list {
+	.citation-list, .list-pop {
 		li {
 			display: block;
 			align-items: flex-start;
