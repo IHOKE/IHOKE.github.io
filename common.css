@@ -7,6 +7,7 @@
 	--col-bold: #09A29C;
 	--col-dots: #3d3d3d;
 	--col-inv: #A2090F;
+	--col-high: #FFE710;
 }
 
 * {
@@ -53,6 +54,15 @@ body {
 }
 
 /* Helpers */
+.highlight {
+	background-color: var(--col-high) !important;
+	color: var(--col-black) !important;
+}
+
+.txt-center {
+	text-align: center !important
+}
+
 .rnd {
 	border-radius: 12px;
 }

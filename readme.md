@@ -4,6 +4,16 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>19 Nov 2026</td>
+	<td>
+		<ul>
+			<li>Added accordion class for well, accordions</li>
+			<li>Added .pop-bcm-241-a3</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>7 Nov 2026</td>
 	<td>
 		<ul>
