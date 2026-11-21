@@ -5,7 +5,7 @@
 
 	window.htmlIncludesReady = Promise.resolve();
 	window.includeHTML = function (filename) {
-		if (!/^[a-z0-9][a-z0-9._-]*\.html$/i.test(filename)) {
+		if (!/^(?:[a-z0-9][a-z0-9._-]*\/)*[a-z0-9][a-z0-9._-]*\.html$/i.test(filename)) {
 			throw new Error(`Invalid HTML fragment filename: ${filename}`);
 		}
 		if (!container) {

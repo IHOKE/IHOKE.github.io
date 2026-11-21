@@ -4,6 +4,17 @@
 <tr> <th>Date</th><th>Decription</th></tr>
 
 <tr>
+	<td>21 Nov 2026</td>
+	<td>
+		<ul>
+			<li>Reorganized HTML fragments folder structure</li>
+			<li>Fixed loader JS to correctly read file path within</li>
+			<li>Added Links to VGen and Straw page AMA</li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
 	<td>19 Nov 2026</td>
 	<td>
 		<ul>
