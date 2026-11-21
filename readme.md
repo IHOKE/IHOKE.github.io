@@ -7,6 +7,7 @@
 	<td>21 Nov 2026</td>
 	<td>
 		<ul>
+			<li>Added .pop-bcm-206-a3</li>
 			<li>Reorganized HTML fragments folder structure</li>
 			<li>Fixed loader JS to correctly read file path within</li>
 			<li>Added Links to VGen and Straw page AMA</li>
